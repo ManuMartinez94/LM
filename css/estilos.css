@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    height: 3000px;
+    font-family: 'Playfair Display', serif;
+}
+.azulClaro {
+    color: #00acee;
+}
+.azul {
+    color: #3b5998;
+}
+.rojo {
+    color: #c8232c;
+}
+.naranja {
+    color: #db4a39;
+}
+.morado {
+    color: #833AB4;
+}
+h2 {
+    color: rgb(22, 104, 180);
+    font-size: 1.2em;
+    margin-top: 2em;
+ 
+}
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primeraLetra {
+    display: inline-block;
+}
+.primeraLetra::first-letter {
+    font-size: 1.3em;
+    
+}
+.medida {
+    width: 70%;
+    margin: auto;
+    margin-top: 8em;
+}
+header {
+    width: 100%;
+    height: 14em;
+    margin-top: 3em;
+
+
+}
+
+header img {
+    width: 24em;
+    transition: all 1s;
+
+}
+header img:hover {
+    opacity: 0.5;
+    transform: rotate(-20deg);
+    transition: all 0.5s;
+}
+#descuento {
+    width: 1.5%;
+    height: 10em;
+    background-image: linear-gradient(rgb(251,128,76),#f8a771, rgb(251,128,76));
+    border-radius: 35% 0 0 35%;
+    box-shadow: 0 0 5px 2px gray;
+
+    position: fixed;
+        top: 3em;
+        right: 0;
+}
+#descuento:hover {
+    width: 2.5%;
+    opacity: 0.5;
+    transition-property: width;
+    transition-duration: 0.5s;
+
+}
+#tooltip {
+    position: relative;
+    display: inline-block;
+
+    
+}
+#tooltip #texto {
+    visibility: hidden;
+    width: 100px;
+    background-color: gray;
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px 0;
+    position: absolute;
+    z-index: 1;
+}
+ #texto:hover {
+    visibility: visible;
+}
+
+#descuento:active {
+    width: 11em;
+    background-image: url(/img/cuponDescuento.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 25%;
+    opacity: 1;
+    transition-property: width, opacity;
+    transition-duration: 0.8s;
+    
+}
+/*NAVEGADOR*/
+
+nav {
+    width: 100%;
+}
+
+#menu {
+    width: 100%;
+    height: 5em;
+    background-image: linear-gradient(to left, #883a0c ,ivory, #883a0c);
+    box-shadow: 0 0 5px 2px gray;
+}
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#menu ul li {
+    margin-left: 6em;
+}
+#menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+#menu ul li a:hover {
+    font-size: large;
+    transition: all 0.3s;
+    border-bottom: 1px solid black;
+}
+#imagenes {
+    height: 9em;
+
+
+}
+#michelin {
+    width: 15em;
+    position: relative;
+    bottom: 0.4em;
+    left: 2em;
+
+}
+#sello {
+    width: 9em;
+    float: right;
+    margin-right: 4em;
+    margin-top: -0.5em;
+
+}
+#redesSociales {
+    width: 100%;
+    padding: 2em 3em 2em 3em;
+    overflow: hidden;
+}
+#redesSociales ul {
+    list-style: none;
+    float: left;
+}
+#redesSociales ul li {
+    display: inline-block;
+    margin-right: .7em;
+}
+i {
+    font-size: 28px;
+}
+#redesSociales ul li a:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+#redesSociales p {
+    float: right;
+    color:  #b96331;
+
+}
+/*---------------MAIN1----------*/
+main {
+    width: 100%;
+    margin-top: 4em;
+}
+#tituloPrincipal {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    margin-bottom: 2.5em;
+    word-spacing: 0.3em;
+}
+.scroll {
+    height: 19em;
+    box-shadow: 0 0 5px 2px black;
+    background-image: url(/img/fr1_nigirisushi.jpg);
+    background-attachment: fixed;
+}
+#cita cite{
+    width: 90%;
+    padding: 1em 2em;
+    border-left: 3px solid#3b5998;
+    line-height: 1.8em;
+    font-weight: 600;
+}
+#cita p {
+    font-size: 0.8em;
+    float: right;
+    color: gray;
+}
+hr {
+    width: 25%;
+    margin: auto;
+    margin-top: 8em;
+    border: 2px solid black;
+
+
+}
+.entrega {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+.textoEntrega {
+    width: 50em;
+    margin-bottom: 2em;
+    text-align: center;
+
+}
+.textoEntrega p {
+    margin-top: 6em;
+    font-size: 0.8em;
+    font-weight: 600;
+    
+}
+.textoEntrega p span {
+    display: inline;
+}
+
+.fotoEntrega {
+    width: 360px;
+
+}
+.fotoEntrega img {
+    width: 22em;
+    box-shadow: 0 0 5px 2px black;
+}
+.fotos {
+    text-align: center;
+    font-size: 16px;
+}
+.contenedorPadreFotos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 4em;
+
+    
+}
+.contenedorFotos {
+    box-shadow: 0 0 10px 2px gray;
+    width: 12em;
+    height: 24em;
+    padding: 1em;
+    border-radius: 1em;
+    margin-top: 1.5em;
+}
+
+.fotoSushi {
+    box-shadow: 0 0 5px 2px gray;
+    border-radius: .5em;
+    width: 10em;
+    height: 19em;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+.fotoSushi a img {
+    width: 27em;
+    transition: 0.6s;
+}
+.fotoSushi a img:hover {
+    opacity: 0.5;
+}
+
+.contenedorFotos p {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+/*-------RESPONSIVE--------*/
+@media only screen and (max-width: 800px){
+    body {
+        font-size: 13px;
+    }
+    #menu {
+        height: auto;
+    }
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #menu ul li{
+        font-size: 1.5em;
+        line-height: 4.5em;
+    }
+
+    
+}
+
