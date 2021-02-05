@@ -43,9 +43,7 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-.primeraLetra {
-    display: inline-block;
-}
+
 .primeraLetra::first-letter {
     font-size: 1.3em;
     
@@ -126,7 +124,7 @@ header img:hover {
 
 .descuento:active {
     width: 11em;
-    background-image: url(/img/cuponDescuento.jpg);
+    background-image: url(../img/cuponDescuento.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -277,7 +275,7 @@ h1, h3 {
     background-size: cover;
 }
 .fotoScroll1 {
-    background-image: url(/img/fr1_nigirisushi.jpg);
+    background-image: url(../img/fr1_nigirisushi.jpg);
 }
 cite{
     width: 95%;
@@ -286,11 +284,12 @@ cite{
     letter-spacing: 0.1em;
     line-height: 1.8em;
     font-weight: 600;
+    display: inline-block;
     
 }
 
 .autorCita {
-    font-size: 0.8em;
+    font-size: 12.8px;
     float: right;
     color: gray;
     margin-top: 2em;
@@ -393,7 +392,7 @@ hr {
     box-shadow: 0 0 10px 4px gray;
 }
 #galeria1 {
-    background-image: url(/img/andrewNishimura.jpg);
+    background-image: url(../img/andrewNishimura.jpg);
     background-position: center;
     background-size: cover;
     filter: sepia(100%);
@@ -406,7 +405,7 @@ hr {
 
 }
 #galeria2 {
-    background-image: url(/img/nakaneNishimura.jpg);
+    background-image: url(../img/nakaneNishimura.jpg);
     background-position: center;
     background-size: cover;
     grid-column: 2/3;
@@ -420,7 +419,7 @@ hr {
     filter: none;
 }
 #galeria3 {
-    background-image: url(/img/hichitoNishimura.jpg);
+    background-image: url(../img/hichitoNishimura.jpg);
     background-position: right;
     background-size: cover;
     filter: grayscale(100%);
@@ -433,7 +432,7 @@ hr {
     transform: rotateY(180deg);
 }
 #galeria4 {
-    background-image: url(/img/joeNishimura.jpg);
+    background-image: url(../img/joeNishimura.jpg);
     background-position: center;
     background-size: cover;
     grid-column: 1/2;
@@ -446,7 +445,7 @@ hr {
 
 }
 #galeria5 {
-    background-image: url(/img/fredNishimura.jpg);
+    background-image: url(../img/fredNishimura.jpg);
     background-position: right;
     background-size: cover;
     filter: sepia(100%);
@@ -489,28 +488,28 @@ hr {
     margin-top: 1em;
 }
 .foto1 {
-    background-image: url(/img/andrewNishimura.jpg);
+    background-image: url(../img/andrewNishimura.jpg);
     background-size: 30em;
     background-position: top -2em left -14em;
     
 }
 .foto2 {
-    background-image: url(/img/hichitoNishimura.jpg);
+    background-image: url(../img/hichitoNishimura.jpg);
     background-size: 30em;
     background-position: top -0.8em left -17.2em;
 }
 .foto3 {
-    background-image: url(/img/fredNishimura.jpg);
+    background-image: url(../img/fredNishimura.jpg);
     background-size: 30em;
     background-position: top left -17.2em;
 }
 .foto4 {
-    background-image: url(/img/nakaneNishimura.jpg);
+    background-image: url(../img/nakaneNishimura.jpg);
     background-size: 20em;
     background-position: top 0em left -6em;
 }
 .foto5 {
-    background-image: url(/img/joeNishimura.jpg);
+    background-image: url(../img/joeNishimura.jpg);
     background-size: 17em;
     background-position: top 0em left -4em;
 }
@@ -540,7 +539,7 @@ hr {
         left: 0;
         right: 0;
         bottom: 0;
-    background-image: url(/img/sushitoRestaurant.jpg);
+    background-image: url(../img/sushitoRestaurant.jpg);
     background-size: cover;
     background-position: center;
     opacity: 0.1;
@@ -585,19 +584,45 @@ hr {
 }
 .horario {
     width: 35em;
-    height: 30em;
-    padding: 2em;
+    padding: 3em;
 
     box-shadow: 0 0 5px 3px gray;
     border-radius: 10%;
 }
+.horario h3,h4 {
+    margin-bottom: 1.4em;
+}
+.horario li {
+    line-height: 2em;
+}
+.horario hr {
+    width: 100%;
+    border: 1px solid gray;
+    margin: 1.5em 0;
+}
 .horario ul {
     display: flex;
     flex-direction: column;
+    list-style-type: disc;
+    font-size: 13.5px;
+    margin-left: 0.5em;
 }
 .fotoScroll2 {
-    background-image: url(/img/fr2_sushitable.jpg);
+    background-image: url(../img/fr2_sushitable.jpg);
 }
+.listaSecundaria {
+    list-style: none;
+    font-weight: normal;
+}
+.negrita {
+    font-weight: 600;
+}
+.letraTel {
+    font-style: oblique;
+    color: gray;
+    font-size: 13.5px;
+}
+
 /*-------RESPONSIVE--------*/
 @media only screen and (max-width: 800px){
 
@@ -615,7 +640,9 @@ hr {
         font-size: 1.2em;
 
     }
-
+    .textoEquipo {
+        font-size: 11px;
+    }
     
 }
 
